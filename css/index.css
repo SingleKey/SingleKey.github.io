@@ -12,11 +12,11 @@ body {
 
 ::-webkit-scrollbar {
     background-color: transparent;
-    width: 0;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #8cc1f8;
+    background-color: #6faef1;
     border-radius: 8px;
     background-clip: content-box;
     border: 2px solid transparent;
@@ -25,7 +25,8 @@ body {
 /* 自定义样式 */
 #rootView {
     display: flex;
-    padding-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* 左侧布局 */
@@ -158,6 +159,8 @@ body {
     left: 50px;
     top: 50px;
     padding: 10px;
+    line-height: 25px;
+    font-size: 15px;
 }
 
 

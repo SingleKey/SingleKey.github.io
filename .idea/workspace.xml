@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a178e86-3fb0-4f42-8065-ce97556af71b" name="更改" comment="feat: 初次提交，保存代码" />
+    <list default="true" id="5a178e86-3fb0-4f42-8065-ce97556af71b" name="更改" comment="feat: 初次提交，保存代码">
+      <change afterPath="$PROJECT_DIR$/js/components/content-graphical.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/components/title-graphical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +59,6 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "dev",
     "last_opened_file_path": "E:/data/GITEE/curriculum-vitae",
@@ -71,6 +77,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript 调试.index.html" />
+        <item itemvalue="JavaScript 调试.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -86,6 +93,7 @@
       <workItem from="1719135803617" duration="2536000" />
       <workItem from="1719150209929" duration="12000" />
       <workItem from="1719150847230" duration="190000" />
+      <workItem from="1719151052136" duration="1365000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初次提交，保存代码">
       <option name="closed" value="true" />
@@ -95,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719150878842</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat: 初次提交，保存代码">
+      <option name="closed" value="true" />
+      <created>1719151118661</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719151118661</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,7 +122,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

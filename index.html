@@ -8,6 +8,9 @@
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.13/vue.min.js"></script>
     <script src="https://cdn.bootcdn.net/ajax/libs/animejs/3.2.2/anime.min.js"></script>
     <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <!-- 自定义组件 -->
+    <script src="./js/components/content-graphical.js"></script>
+    <script src="./js/components/title-graphical.js"></script>
     <title>杨元深的个人简历</title>
 </head>
 <body>
@@ -52,55 +55,32 @@
                 技术服务生活
             </div> -->
             <div class="y-line"></div>
-            <div class="graphical-view">
-                <div class="graphical-1"></div>
-                <div class="graphical-2"></div>
-            </div>
-            <div class="content-view">
-                <div class="graphical-90">
-                    <div class="graphical-sub-view-2">
-                        <span class="graphical-sub-view-2-title">工作经历</span>
-                        <div class="graphical-sub-line"></div>
-                        <div class="graphical-sub-1"></div>
-                        <div class="graphical-sub-2"></div>
-                        <div class="graphical-sub-3"></div>
-                        <div class="graphical-sub-4"></div>
-                    </div>
-                </div>
-                <div class="text-view">
-                    as80708172308
-                </div>
-            </div>
-            <div class="content-view">
-                <div class="graphical-90">
-                    <div class="graphical-sub-view-2">
-                        <span class="graphical-sub-view-2-title">工作经历</span>
-                        <div class="graphical-sub-line"></div>
-                        <div class="graphical-sub-1"></div>
-                        <div class="graphical-sub-2"></div>
-                        <div class="graphical-sub-3"></div>
-                        <div class="graphical-sub-4"></div>
-                    </div>
-                </div>
-                <div class="text-view">
-                    as80708172308
-                </div>
-            </div>
-            <div class="content-view">
-                <div class="graphical-90">
-                    <div class="graphical-sub-view-2">
-                        <span class="graphical-sub-view-2-title">工作经历</span>
-                        <div class="graphical-sub-line"></div>
-                        <div class="graphical-sub-1"></div>
-                        <div class="graphical-sub-2"></div>
-                        <div class="graphical-sub-3"></div>
-                        <div class="graphical-sub-4"></div>
-                    </div>
-                </div>
-                <div class="text-view">
-                    as80708172308
-                </div>
-            </div>
+            <title-graphical></title-graphical>
+            <content-graphical title="主要技术" style="height: 260px;">
+                <template slot="content">
+                    <div>1. 熟悉 Java 基础、常用 API、反射、多线程、Servlet、JSP、JNA、常用数据结构、算法、设计模式</div>
+                    <div>2. 熟悉 Spring 全家桶、MyBatis、Shiro、EasyExcel、Quartz、Thymeleaf、Freemarker、Swagger 等框架类库</div>
+                    <div>3. 熟悉 MySQL、Sqlserver、Redis、RabbitMQ、Sqlite</div>
+                    <div>4. 熟悉 HTML5、CSS、SCSS、JavaScript、JQuery、Ajax、Vue、VueRouter、Axios、uniapp、微信小程序</div>
+                    <div>5. 熟悉 Layui、ElementUI、IViewUI、VantUI、WeUI 等 UI 库、前端工具类库以及 Echarts 图表</div>
+                    <div>6. 熟悉 Linux、Nginx、Node、Docker、Git、SVN、Maven</div>
+                </template>
+            </content-graphical>
+            <content-graphical title="工作经历">
+                <template slot="content">
+                    9090
+                </template>
+            </content-graphical>
+            <content-graphical title="项目经验">
+                <template slot="content">
+                    9090
+                </template>
+            </content-graphical>
+            <content-graphical title="个人项目">
+                <template slot="content">
+                    9090
+                </template>
+            </content-graphical>
         </div>
     </div>
 </body>
