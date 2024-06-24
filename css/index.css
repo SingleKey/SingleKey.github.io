@@ -12,7 +12,7 @@ body {
 
 ::-webkit-scrollbar {
     background-color: transparent;
-    width: 10px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -36,7 +36,13 @@ body {
     background-color: white;
     margin-right: 20px;
     border-radius: 5px;
+    /* transition: .6s; */
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
 }
+
+/* .left-view:hover {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+} */
 
 /* 头像 */
 .avatar-view {
@@ -136,6 +142,7 @@ body {
     min-width: 800px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
 }
 
 /* 竖线 */
