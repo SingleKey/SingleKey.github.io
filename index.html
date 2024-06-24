@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="https://unpkg.com/typed.js@2.0.12/lib/typed.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.13/vue.min.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+    <script type="text/javascript" src="./js/commons/typed-2.0.12.min.js"></script>
+    <script src="./js/commons/vue-2.7.13.min.js"></script>
+    <script src="./js/commons/anime-3.2.2.min.js"></script>
     <link rel="stylesheet" href="./css/index.css" type="text/css" />
     <!-- 自定义组件 -->
     <script src="./js/components/content-graphical.js"></script>
     <script src="./js/components/title-graphical.js"></script>
-    <title>杨元深的个人简历</title>
+    <title>程序员小杨的个人简历</title>
 </head>
 <body>
     <div id="rootView">
         <div class="left-view">
             <div class="avatar-view">
-                <div class="avatar"></div>
+                <div class="avatar-background">
+                    <img src="./assect/avatar.jpg" class="avatar"/>
+                    <!-- <div class="avatar"></div> -->
+                </div>
             </div>
             <div>
                 <div class="title-view">
@@ -47,6 +50,10 @@
                         <div class="order-info-column-name">Gitee：</div>
                         <div><a href="https://gitee.com/i7606" target="_blank">@信仰</a></div>
                     </div>
+                    <div class="order-info-column">
+                        <div class="order-info-column-name">当前状态：</div>
+                        <div><b>在职-考虑机会</b></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -58,22 +65,73 @@
             <title-graphical></title-graphical>
             <content-graphical title="主要技术" style="height: 260px;">
                 <template slot="content">
-                    <div>1. 熟悉 Java 基础、常用 API、反射、多线程、Servlet、JSP、JNA、常用数据结构、算法、设计模式</div>
-                    <div>2. 熟悉 Spring 全家桶、MyBatis、Shiro、EasyExcel、Quartz、Thymeleaf、Freemarker、Swagger 等框架类库</div>
-                    <div>3. 熟悉 MySQL、Sqlserver、Redis、RabbitMQ、Sqlite</div>
-                    <div>4. 熟悉 HTML5、CSS、SCSS、JavaScript、JQuery、Ajax、Vue、VueRouter、Axios、uniapp、微信小程序</div>
-                    <div>5. 熟悉 Layui、ElementUI、IViewUI、VantUI、WeUI 等 UI 库、前端工具类库以及 Echarts 图表</div>
-                    <div>6. 熟悉 Linux、Nginx、Node、Docker、Git、SVN、Maven</div>
+                    <div>1. 熟悉 Java 基础、常用 API、反射、多线程、Servlet、JSP、JNA、常用数据结构、算法、设计模式。</div>
+                    <div>2. 熟悉 Spring、SpringSecurity、SpringMVC、SpringBoot、SpringCloud、SpringCloudAlibaba。</div>
+                    <div>3. 熟悉 MyBatis、Shiro、Thymeleaf、Freemarker、EasyExcel、Quartz、Swagger 等框架类库。</div>
+                    <div>4. 熟悉 MySQL、Redis、RabbitMQ、RocketMQ、Sqlite。</div>
+                    <div>5. 熟悉 HTML5、CSS、SCSS、JS、JQuery、Ajax、Vue、VueX、VueRouter、Axios、uniapp、微信小程序。</div>
+                    <div>6. 熟悉 Layui、ElementUI、WeUI、Echarts图表等以及各种UI库。</div>
+                    <div>7. 熟悉 Linux、Nginx、NodeJS、Docker、Git、SVN、Maven。</div>
                 </template>
             </content-graphical>
-            <content-graphical title="工作经历">
+            <content-graphical title="工作经历" style="height: 150px;">
                 <template slot="content">
-                    9090
+                    <table>
+                        <tr>
+                            <td>时间</td>
+                            <td>公司</td>
+                            <td>职位</td>
+                        </tr>
+                        <tr>
+                            <td>2022 年 3 月至 2024 年 3 月</td>
+                            <td>广州云潮供应链有限公司</td>
+                            <td>Java 后端工程师</td>
+                        </tr>
+                        <tr>
+                            <td>2021 年 8 月至 2022 年 3 月</td>
+                            <td>广州平云小匠有限公司</td>
+                            <td>Java 后端工程师</td>
+                        </tr>
+                    </table>
                 </template>
             </content-graphical>
-            <content-graphical title="项目经验">
+            <content-graphical title="项目经验" style="height: 550px;">
                 <template slot="content">
-                    9090
+                    <table>
+                        <tr></tr>
+                        <tr>
+                            <td><b>项目名称：</b></td>
+                            <td>云潮供应链无纸化系统</td>
+                        </tr>
+                        <tr>
+                            <td><b>项目描述：</b></td>
+                            <td>该项目是用于冷链仓储物流管理，项目实现无纸化数据留存，方便快捷的对订单进行管理。</td>
+                        </tr>
+                        <tr>
+                            <td><b>技 术 栈：</b></td>
+                            <td>后 端：SpringBoot、SpringCloud Alibaba、MyBatisPlus、Quartz、EasyExcel、POI、Shiro、Swagger</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>前 端：Vue、Vue-Router、Axios、ElementUI、ECharts、SCSS</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>数据库：MySQL、SqlServer、</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>中间件：Redis、RabbitMQ</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>服务器：Nginx、Docker、CentOS</td>
+                        </tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                        <tr></tr>
+                    </table>
                 </template>
             </content-graphical>
             <content-graphical title="个人项目">
