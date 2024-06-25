@@ -1,0 +1,66 @@
+
+
+/* 右侧正文布局 */
+.right-view {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 50%;
+    min-width: 800px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+/* 竖线 */
+.y-line {
+    position: absolute;
+    width: 2px;
+    height: calc(100% - 40px);
+    background-color: rgb(85,142,213);
+    left: 50px;
+    top: 20px;
+}
+
+/* 正文 */
+.content-view {
+    position: relative;
+    min-width: 800px;
+    min-height: 100px;
+}
+
+.graphical-90 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.text-view {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    padding: 10px;
+    line-height: 25px;
+    font-size: 15px;
+    max-width: 90%;
+}
+
+/* ... */
+table {
+    width: 710px;
+}
+
+tr:first-child {
+    /* background-color: aliceblue; */
+}
+
+tr td {
+    padding-left: 10px;
+    min-width: 75px;
+}
+
+tr:not(:nth-child(1)) {
+    /* background-color: antiquewhite; */
+}
+
+

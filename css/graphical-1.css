@@ -1,0 +1,24 @@
+/* 图形1 */
+.graphical-view {
+    display: flex;
+    overflow: hidden;
+}
+
+.graphical-1 {
+    position: relative;
+    left: -15px;
+    height: 25px;
+    min-width: 60%;
+    transform: skewX(45deg);
+    background-color: rgb(85,142,213);
+}
+
+.graphical-2 {
+    position: relative;
+    left: -5px;
+    top: 5px;
+    height: 20px;
+    min-width: 45%;
+    transform: skewX(45deg);
+    background-color: rgb(247,150,70);
+}

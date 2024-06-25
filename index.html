@@ -8,52 +8,64 @@
     <script src="./js/commons/vue-2.7.13.min.js"></script>
     <script src="./js/commons/anime-3.2.2.min.js"></script>
     <link rel="stylesheet" href="./css/index.css" type="text/css" />
+    <link rel="stylesheet" href="./css/graphical-1.css" type="text/css" />
+    <link rel="stylesheet" href="./css/graphical-2.css" type="text/css" />
+    <link rel="stylesheet" href="./css/left-view.css" type="text/css" />
+    <link rel="stylesheet" href="./css/right-view.css" type="text/css" />
     <!-- 自定义组件 -->
     <script src="./js/components/content-graphical.js"></script>
     <script src="./js/components/title-graphical.js"></script>
+    <script src="./js/components/switch.js"></script>
     <title>程序员小杨的个人简历</title>
 </head>
 <body>
     <div id="rootView">
-        <div class="left-view">
-            <div class="avatar-view">
-                <div class="avatar-background">
-                    <img src="./assect/avatar.jpg" class="avatar"/>
-                    <!-- <div class="avatar"></div> -->
+        <div class="empty-left-view">
+            <!-- left-view-style -->
+            <div class="left-view-fixed left-view-style">
+                <div class="avatar-view">
+                    <div class="avatar-background turn-right">
+                        <img src="./assect/avatar.jpg" class="avatar turn-left"/>
+                        <!-- <div class="avatar"></div> -->
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="title-view">
-                    <div class="title">
-                        程序员小杨
+                <div>
+                    <div class="title-view">
+                        <div class="title">
+                            程序员小杨
+                        </div>
+                        <div class="sub-title"><span></span></div>
+                        <day-night-switch style="min-height: 50px; min-width: 200px;"></day-night-switch>
                     </div>
-                    <div class="sub-title"><span></span></div>
+                    <div class="order-info-view">
+                        <div class="order-info-column">
+                            <div class="order-info-column-name">学历：</div>
+                            <div>大专</div>
+                        </div>
+                        <div class="order-info-column">
+                            <div class="order-info-column-name">年龄：</div>
+                            <div>24</div>
+                        </div>
+                        <div class="order-info-column">
+                            <div class="order-info-column-name">工作经验：</div>
+                            <div>3年</div>
+                        </div>
+                        <div class="order-info-column">
+                            <div class="order-info-column-name">邮箱：</div>
+                            <div>datom7606@163.com</div>
+                        </div>
+                        <div class="order-info-column">
+                            <div class="order-info-column-name">Gitee：</div>
+                            <div><a href="https://gitee.com/i7606" target="_blank">@信仰</a></div>
+                        </div>
+                        <div class="order-info-column">
+                            <div class="order-info-column-name">当前状态：</div>
+                            <div><b>在职-考虑机会</b></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="order-info-view">
-                    <div class="order-info-column">
-                        <div class="order-info-column-name">学历：</div>
-                        <div>大专</div>
-                    </div>
-                    <div class="order-info-column">
-                        <div class="order-info-column-name">年龄：</div>
-                        <div>24</div>
-                    </div>
-                    <div class="order-info-column">
-                        <div class="order-info-column-name">工作经验：</div>
-                        <div>3年</div>
-                    </div>
-                    <div class="order-info-column">
-                        <div class="order-info-column-name">邮箱：</div>
-                        <div>datom7606@163.com</div>
-                    </div>
-                    <div class="order-info-column">
-                        <div class="order-info-column-name">Gitee：</div>
-                        <div><a href="https://gitee.com/i7606" target="_blank">@信仰</a></div>
-                    </div>
-                    <div class="order-info-column">
-                        <div class="order-info-column-name">当前状态：</div>
-                        <div><b>在职-考虑机会</b></div>
-                    </div>
+                <div style="padding-left: 20px; padding-bottom: 20px;">
+                    <switch-button></switch-button>
                 </div>
             </div>
         </div>
@@ -109,7 +121,11 @@
                         </tr>
                         <tr>
                             <td><b>技 术 栈：</b></td>
-                            <td>后 端：SpringBoot、SpringCloud Alibaba、MyBatisPlus、Quartz、EasyExcel、POI、Shiro、Swagger</td>
+                            <td>后 端：SpringBoot、SpringCloud Alibaba、MyBatisPlus、Quartz、EasyExcel、POI、</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Shiro、Swagger</td>
                         </tr>
                         <tr>
                             <td></td>

@@ -1,0 +1,253 @@
+
+/* 左侧布局 */
+.left-view {
+    max-height: 500px;
+    min-width: 300px;
+    /* background-color: white;
+    margin-right: 20px;
+    border-radius: 5px; */
+    /* transition: .6s; */
+    /* box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1); */
+}
+
+.empty-left-view {
+    max-height: 550px;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.left-view-fixed {
+    position: fixed;
+    max-height: 550px;
+    min-width: 300px;
+    border-radius: 5px;
+    /* transition: .6s; */
+}
+
+.left-view-style {
+    background-color: white;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+/* .left-view:hover {
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+} */
+
+/* 头像 */
+.avatar-view {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+}
+
+.avatar-background {
+    background-image: linear-gradient( rgb(247,150,70), rgb(255, 255, 255), rgb(85,142,213));
+    background-clip: border;
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* 旋转动画 指定class为trun即可使用*/
+/* 
+turn : 定义的动画名称
+10s : 动画时间
+linear : 动画平滑
+infinite :使动画无限循环
+transform:rotate(旋转角度)
+%0:动画开始
+%100:动画结束
+*/
+.turn-right {
+    animation: turn-right 8s linear infinite;
+}
+
+
+/* 旋转动画 指定class为trun即可使用*/
+/* 
+turn : 定义的动画名称
+10s : 动画时间
+linear : 动画平滑
+infinite :使动画无限循环
+transform:rotate(旋转角度)
+%0:动画开始
+%100:动画结束
+*/
+.turn-left {
+    animation: turn-left 8s linear infinite;
+}
+
+@keyframes turn-right {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(72deg);
+    }
+
+    40% {
+        transform: rotate(144deg);
+    }
+
+    60% {
+        transform: rotate(216deg);
+    }
+
+    80% {
+        transform: rotate(288deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes turn-left {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    20% {
+        transform: rotate(288deg);
+    }
+
+    40% {
+        transform: rotate(216deg);
+    }
+
+    60% {
+        transform: rotate(144deg);
+    }
+
+    80% {
+        transform: rotate(72deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.avatar {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+/* 标题名称 */
+.title-view {
+    /* background-color: rgb(247,150,70); */
+    background-color: white;
+    padding: 10px;
+    align-content: center;
+    /* color: rgb(85,142,213); */
+}
+
+.title {
+    font-size: 40px;
+    line-height: 80px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: rgb(85,142,213);
+    
+}
+
+.sub-title {
+    min-height: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+.sub-title span {
+    font-size: 20px;
+    color: rgb(247,150,70);
+}
+
+/* 其他信息 */
+.order-info-view {
+    color: rgb(85,142,213);
+    padding: 20px;
+}
+.order-info-column {
+    display: flex;
+    line-height: 28px;
+}
+
+.order-info-column a {
+    min-width: 80px;
+    width: 80px;
+    max-width: 80px;
+    color: rgb(85,142,213);
+}
+
+.order-info-column-name {
+    min-width: 80px;
+    width: 80px;
+    max-width: 80px;
+    color: rgb(247,150,70);
+    font-weight: bold;
+    /* display: flex; */
+    /* justify-content: right; */
+}
+
+
+
+/* =========================== */
+
+
+.widget_switch_checkbox {
+    display: none;
+    /*过渡效果，可考虑不加*/
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.widget_switch_label {
+    margin-top: 5px;
+    background-color: rgb(85,142,213);
+    display: inline-block;
+    position: relative;
+    height: 23px;
+    width: 50px;
+    border-radius: 1000px;
+    box-shadow: 0 0 2px black;
+}
+
+.widget_switch_checkbox:checked~.widget_switch_label .widget_switch_circle {
+    left: 27px;
+}
+
+.widget_switch_circle {
+    position: absolute;
+    display: inline-block;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    /* border: 2px solid #333; */
+    background-color: #eee;
+    left: 0;
+    /*过渡效果，可考虑不加*/
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+
+.widget_switch_checkbox:checked~.widget_switch_label {
+    background: rgb(247,150,70);
+}

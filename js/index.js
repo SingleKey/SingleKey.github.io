@@ -1,8 +1,5 @@
 // 打字机效果
-// let typed1;
-let typed2;
-// let animation;
-// vue
+let typed;
 const vueapp = new Vue({
     el: "#rootView",
     data: {
@@ -11,11 +8,7 @@ const vueapp = new Vue({
         
     },
     mounted() {
-        // typed1 = new Typed(".title", {
-        //     strings: ["程序员^500小杨"],//输出的文字
-        //     typeSpeed: 200,//打字的速度
-        // });
-        typed2 = new Typed(".sub-title span", {
+        typed = new Typed(".sub-title span", {
             strings: ["一个菜鸟哦^700===", "一个热爱编程^500的^500菜鸟程序员"],//输出的文字
             typeSpeed: 150,//打字的速度
             smartBackspace: true,// 开启智能退格 默认false
@@ -27,13 +20,6 @@ const vueapp = new Vue({
             showCursor: true,// 显示光标
             cursorChar: "_"//光标文字
         });
-        // animation = anime({
-        //     targets: ".avatar-background",
-        //     //translateX: 250, // 在 X 轴上移动 250 像素
-        //     rotate: '1turn', // 旋转一圈
-        //     duration: 15000, // 动画持续时间为 2 秒
-        //     loop: false, // 无限循环
-        // });
     },
     methods: {
 
