@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a178e86-3fb0-4f42-8065-ce97556af71b" name="更改" comment="feat: 优化样式">
+    <list default="true" id="5a178e86-3fb0-4f42-8065-ce97556af71b" name="更改" comment="feat: 添加简历信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/right-view.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/right-view.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/content-graphical.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/content-graphical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/left-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/left-view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/title-graphical.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/title-graphical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +98,8 @@
       <workItem from="1719237909740" duration="2364000" />
       <workItem from="1719320654206" duration="49000" />
       <workItem from="1719331977471" duration="33000" />
-      <workItem from="1719457759070" duration="1228000" />
+      <workItem from="1719457759070" duration="1607000" />
+      <workItem from="1719485287726" duration="5008000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初次提交，保存代码">
       <option name="closed" value="true" />
@@ -144,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719471411620</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="feat: 添加简历信息">
+      <option name="closed" value="true" />
+      <created>1719473644145</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719473644145</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +194,7 @@
     <MESSAGE value="feat: 优化代码" />
     <MESSAGE value="feat: 添加switch、优化样式" />
     <MESSAGE value="feat: 优化样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 优化样式" />
+    <MESSAGE value="feat: 添加简历信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加简历信息" />
   </component>
 </project>

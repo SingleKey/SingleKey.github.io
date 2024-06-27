@@ -7,7 +7,10 @@ var graphical =
 //Vue定义组件
 var templateGraphical = Vue.extend({
     template: graphical,
-    data: {
+    data() {
+        return {
+            
+        }
     },
     methods:{
     }

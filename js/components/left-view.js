@@ -67,4 +67,4 @@ var templateGraphical = Vue.extend({
 });
 
 //Vue注册全局组件
-Vue.component('switch-button', templateGraphical);
+Vue.component('left-view', templateGraphical);

@@ -47,6 +47,8 @@
 
 /* ... */
 table {
+    /* width: 700px; */
+    margin-top: 10px;
 }
 
 tr:first-child {
