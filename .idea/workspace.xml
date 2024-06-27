@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a178e86-3fb0-4f42-8065-ce97556af71b" name="更改" comment="feat: 添加switch、优化样式" />
+    <list default="true" id="5a178e86-3fb0-4f42-8065-ce97556af71b" name="更改" comment="feat: 优化样式">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/right-view.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/right-view.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +94,7 @@
       <workItem from="1719237909740" duration="2364000" />
       <workItem from="1719320654206" duration="49000" />
       <workItem from="1719331977471" duration="33000" />
+      <workItem from="1719457759070" duration="1228000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初次提交，保存代码">
       <option name="closed" value="true" />
@@ -131,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719332007054</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: 优化样式">
+      <option name="closed" value="true" />
+      <created>1719471411620</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719471411620</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,8 +179,8 @@
     <MESSAGE value="feat: 初次提交，保存代码" />
     <MESSAGE value="feat: 保存代码" />
     <MESSAGE value="feat: 优化代码" />
-    <MESSAGE value="feat: 优化样式" />
     <MESSAGE value="feat: 添加switch、优化样式" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加switch、优化样式" />
+    <MESSAGE value="feat: 优化样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 优化样式" />
   </component>
 </project>
