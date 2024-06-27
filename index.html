@@ -20,13 +20,11 @@
 </head>
 <body>
     <div id="rootView">
-        <div class="empty-left-view">
-            <!-- left-view-style -->
-            <div class="left-view-fixed left-view-style">
+        <div :class="!isFixed ? 'empty-left-view left-view-style' : 'empty-left-view'">
+            <div :class="isFixed ? 'left-view-fixed left-view-style' : ''">
                 <div class="avatar-view">
                     <div class="avatar-background turn-right">
                         <img src="./assect/avatar.jpg" class="avatar turn-left"/>
-                        <!-- <div class="avatar"></div> -->
                     </div>
                 </div>
                 <div>
@@ -64,8 +62,9 @@
                         </div>
                     </div>
                 </div>
-                <div style="padding-left: 20px; padding-bottom: 20px;">
-                    <switch-button></switch-button>
+                <div class="button-view">
+                    <div class="button-view-title">固定卡片</div>
+                    <switch-button @checked="targetPosition"></switch-button>
                 </div>
             </div>
         </div>

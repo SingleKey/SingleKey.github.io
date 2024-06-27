@@ -2,7 +2,10 @@
 let typed;
 const vueapp = new Vue({
     el: "#rootView",
-    data: {
+    data() {
+        return {
+            isFixed: false,
+        }
     },
     created() {
         
@@ -22,7 +25,9 @@ const vueapp = new Vue({
         });
     },
     methods: {
-
+        targetPosition(val) {
+            this.isFixed = val;
+        },
     },
 
 });
