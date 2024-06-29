@@ -25,7 +25,7 @@ var graphical =
                     <td v-for="(val, i) in it.columns" :key="i">
                         <template v-if="typeof val == 'string'">{{val}}</template>
                         <template v-else>
-                            <b v-if="val.bold">{{val.val}}</b>
+                            <b v-if="val.bold" v-html="val.val"></b>
                             <template v-else>{{val.val}}</template>
                         </template>
                     </td>

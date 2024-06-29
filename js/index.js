@@ -4,11 +4,11 @@ const vueapp = new Vue({
     el: "#rootView",
     data() {
         return {
-            isFixed: false,
+            isFixed: true,
             // 技能
             skill: {
                 type: "div",
-                style: "height: 260px;",
+                style: "height: 270px;",
                 tableStyle: "",
                 list: [
                     "1. 熟悉 Java 基础、常用 API、反射、多线程、Servlet、JSP、JNA、常用数据结构、算法、设计模式。",
@@ -23,8 +23,8 @@ const vueapp = new Vue({
             // 工作经历
             workExperience: {
                 type: "table",
-                style: "height: 150px;",
-                tableStyle: "",
+                style: "height: 170px;",
+                tableStyle: "width: 650px;",
                 // 表格
                 tables: [
                     {
@@ -57,7 +57,7 @@ const vueapp = new Vue({
                             { name: { val: "" }, columns: ["中间件：Redis、RabbitMQ"] },
                             { name: { val: "" }, columns: ["服务器：Nginx、Docker、CentOS"] },
                             { name: { val: "" }, columns: [""] },
-                            { name: { bold: true, val: "工作内容" }, columns: ["1. 编写拣货任务、出入库订单、订单预约、导入导出、报表等功能。"]},
+                            { name: { bold: true, val: "工作内容：" }, columns: ["1. 编写拣货任务、出入库订单、订单预约、导入导出、报表等功能。"]},
                             { name: { val: "" }, columns: ["2. 编写物流订单功能，使用腾讯地图 Api 更新位置。"]},
                             { name: { val: "" }, columns: ["3. 使用 Quartz 编写盘点任务，定时进行盘点。"]},
                             { name: { val: "" }, columns: ["4. 使用 RabbitMQ 在订单结束后自动生成费用记录。"]},
@@ -122,16 +122,59 @@ const vueapp = new Vue({
                         ]
                     },
                 ]
+            },
+            // 项目经验
+            personalProject: {
+                type: "table",
+                style: "height: 500px;",
+                // tableStyle: "width: 710px; ",
+                // 表格
+                tables: [
+                    {
+                        // 行
+                        rows: [
+                            { name: {bold: true, val: "项目名称：" }, columns: [{bold: true, val: `<a href="https://gitee.com/i7606/ScoreManagement" target="_blank">学生成绩管理系统</a>`}] },
+                            { name: { val: "" }, columns: [""] },
+                            { name: { bold: true, val: "项目描述：" }, columns: ["用时三天完成的毕设接单项目，现已开源。"] },
+                            { name: { val: "" }, columns: [""] },
+                            { name: { bold: true, val: "技 术 栈 ：" }, columns: ["前端：html、css、js、vue、ajax"] },
+                            { name: { val: "" }, columns: ["后端：SpringBoot、MyBatisPlus、Thymeleaf、EasyExcel"] },
+                            { name: { val: "" }, columns: [""] },
+                        ]
+                    },
+                    {
+                        // 行
+                        rows: [
+                            { name: {bold: true, val: "项目名称：" }, columns: [{bold: true, val: `<a href="https://gitee.com/i7606/form-assistance" target="_blank">表单辅助</a>`}] },
+                            { name: { val: "" }, columns: [""] },
+                            { name: { bold: true, val: "项目描述：" }, columns: ["表单信息生成软件，可以生成身份证号码，性别，姓名，地址，用户名，邮箱，等信息"] },
+                            { name: { val: "" }, columns: [""] },
+                            { name: { bold: true, val: "技 术 栈 ：" }, columns: ["C#、Winform、AntdUI、JSON"] },
+                            { name: { val: "" }, columns: [""] },
+                        ]
+                    },
+                    {
+                        // 行
+                        rows: [
+                            { name: {bold: true, val: "项目名称：" }, columns: [{bold: true, val: `<a href="https://gitee.com/i7606/desktop-countdown" target="_blank">桌面倒计时</a>`}] },
+                            { name: { val: "" }, columns: [""] },
+                            { name: { bold: true, val: "项目描述：" }, columns: ["Winform编写的桌面倒计时软件，0点自动更新时间"] },
+                            { name: { val: "" }, columns: [""] },
+                            { name: { bold: true, val: "技 术 栈 ：" }, columns: ["C#、Winform、AntdUI"] },
+                            { name: { val: "" }, columns: [""] },
+                        ]
+                    },
+                ]
             }
 
         }
     },
     created() {
-        
+
     },
     mounted() {
         typed = new Typed(".sub-title span", {
-            strings: ["一个菜鸟哦^700===", "一个热爱编程^500的^500菜鸟程序员"],//输出的文字
+            strings: ["一个菜鸟哦^700===", "一个热爱编程^300的^500菜鸟程序员"],//输出的文字
             typeSpeed: 150,//打字的速度
             smartBackspace: true,// 开启智能退格 默认false
             backSpeed: 150, // 删除速度

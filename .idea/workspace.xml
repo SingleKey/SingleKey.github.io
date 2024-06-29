@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a178e86-3fb0-4f42-8065-ce97556af71b" name="更改" comment="feat: 添加简历信息">
+    <list default="true" id="5a178e86-3fb0-4f42-8065-ce97556af71b" name="更改" comment="feat: 优化组件，添加简历信息">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/left-view.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/left-view.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/right-view.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/right-view.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/components/content-graphical.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/content-graphical.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/left-view.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/left-view.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/components/title-graphical.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/title-graphical.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/components/switch.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/components/switch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +71,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\data\GITEE\curriculum-vitae" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/curriculum-vitae/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -99,7 +104,8 @@
       <workItem from="1719320654206" duration="49000" />
       <workItem from="1719331977471" duration="33000" />
       <workItem from="1719457759070" duration="1607000" />
-      <workItem from="1719485287726" duration="5008000" />
+      <workItem from="1719485287726" duration="5037000" />
+      <workItem from="1719630230367" duration="13324000" />
     </task>
     <task id="LOCAL-00001" summary="feat: 初次提交，保存代码">
       <option name="closed" value="true" />
@@ -157,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719473644145</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: 优化组件，添加简历信息">
+      <option name="closed" value="true" />
+      <created>1719495468301</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719495468301</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,6 +201,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="feat: 初次提交，保存代码" />
@@ -195,6 +211,7 @@
     <MESSAGE value="feat: 添加switch、优化样式" />
     <MESSAGE value="feat: 优化样式" />
     <MESSAGE value="feat: 添加简历信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加简历信息" />
+    <MESSAGE value="feat: 优化组件，添加简历信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 优化组件，添加简历信息" />
   </component>
 </project>

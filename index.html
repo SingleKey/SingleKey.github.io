@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <script type="text/javascript" src="./js/commons/typed-2.0.12.min.js"></script>
 <!--    <script src="./js/commons/vue-2.7.13.min.js"></script>-->
     <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.13/vue.js"></script>
@@ -64,7 +66,7 @@
                 </div>
                 <div class="button-view">
                     <div class="button-view-title">固定卡片</div>
-                    <switch-button @checked="targetPosition"></switch-button>
+                    <switch-button @checked="targetPosition" :fixed="isFixed"></switch-button>
                 </div>
             </div>
         </div>
@@ -74,8 +76,8 @@
             <content-graphical title="主要技术" :content="skill"></content-graphical>
             <content-graphical title="工作经历" :content="workExperience"></content-graphical>
             <content-graphical title="项目经验" :content="projectExperience"></content-graphical>
-            <content-graphical title="个人项目"></content-graphical>
-            <content-graphical title="自我评价"></content-graphical>
+            <content-graphical title="个人项目" :content="personalProject"></content-graphical>
+<!--            <content-graphical title="自我评价"></content-graphical>-->
         </div>
     </div>
 </body>

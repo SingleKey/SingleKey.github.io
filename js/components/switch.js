@@ -13,6 +13,7 @@ var graphical =
 //Vue定义组件
 var templateGraphical = Vue.extend({
     template: graphical,
+    props: ['fixed'],
     data() {
         return {
             isChecked: false
@@ -24,6 +25,12 @@ var templateGraphical = Vue.extend({
         }
     },
     watch: {
+        fixed: {
+            immediate:true,
+            handler(newVal) {
+                this.isChecked = newVal;
+            }
+        },
         isChecked:{
             immediate:true,
             handler(newVal) {
