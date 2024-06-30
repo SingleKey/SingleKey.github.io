@@ -8,7 +8,7 @@ const vueapp = new Vue({
             // 技能
             skill: {
                 type: "div",
-                style: "height: 270px;",
+                style: "height: 290px;",
                 tableStyle: "",
                 list: [
                     "1. 熟悉 Java 基础、常用 API、反射、多线程、Servlet、JSP、JNA、常用数据结构、算法、设计模式。",
@@ -18,12 +18,13 @@ const vueapp = new Vue({
                     "5. 熟悉 HTML5、CSS、SCSS、JS、JQuery、Ajax、Vue、VueX、VueRouter、Axios、uniapp、微信小程序。",
                     "6. 熟悉 Layui、ElementUI、WeUI、Echarts图表等以及各种UI库。",
                     "7. 熟悉 Linux、Nginx、NodeJS、Docker、Git、SVN、Maven。",
+                    "8. 熟悉 单体、分布式、微服务、微信、支付宝支付、可独立开发、运维",
                 ]
             },
             // 工作经历
             workExperience: {
                 type: "table",
-                style: "height: 170px;",
+                style: "height: 150px;",
                 tableStyle: "width: 650px;",
                 // 表格
                 tables: [
@@ -40,7 +41,7 @@ const vueapp = new Vue({
             // 项目经验
             projectExperience: {
                 type: "table",
-                style: "height: 1450px;",
+                style: "height: 1500px;",
                 // tableStyle: "width: 710px; ",
                 // 表格
                 tables: [
@@ -64,8 +65,8 @@ const vueapp = new Vue({
                             { name: { val: "" }, columns: ["5. 使用 ElementUI、Vue-Router、Axios、QrCode 等编写系统页面，封装组件。"]},
                             { name: { val: "" }, columns: ["6. 使用 Echarts 编写报表页面、首页报表、物流轨迹图页面。"]},
                             { name: { val: "" }, columns: ["7. 使用中间件提升系统响应速度、优化 SQL 查询速度。"]},
-                            { name: { val: "" }, columns: ["8. 使用 SpotBugs 等工具检查代码规范与漏洞，清除冗余代码，优化遗留的各种 BUG。"]},
-                            { name: { val: "" }, columns: ["9. 使用 Arthas、jstack、jmap、MAT、XShell、RDM、Navicat 等工具开发和运维，24"]},
+                            { name: { val: "" }, columns: ["8. 使用 SpotBugs 等工具检查代码规范与漏洞，清除冗余代码，优化遗留的各种 BUG、确保接口幂等性。"]},
+                            { name: { val: "" }, columns: ["10. 使用 Arthas、jstack、jmap、MAT、XShell、RDM、Navicat 等工具开发和运维，24"]},
                             { name: { val: "" }, columns: ["小时维护系统正常运行。"]},
                         ]
                     },
@@ -80,7 +81,8 @@ const vueapp = new Vue({
                             { name: { val: "" }, columns: ["后端：SpringBoot、Shiro、MyBatis\\MyBatisPlus"] },
                             { name: { val: "" }, columns: ["数据库、中间件：MySQL、Redis、RabbitMQ"] },
                             { name: { val: "" }, columns: [""] },
-                            { name: { bold: true, val: "工作内容" }, columns: ["1. 独立维护小程序前后端，优化前后端代码，提升用户体验，解决线上 BUG。"]},
+                            { name: { bold: true, val: "工作内容" }, columns: ["1. 独立维护小程序前后端，优化前后端代码，确保接口幂等性，提升用户体验，"]},
+                            { name: { val: "" }, columns: ["解决线上 BUG。"]},
                             { name: { val: "" }, columns: ["2. 编写物流详情、订单列表、签到、导入导出等功能的页面与接口，以及封装组件。"]},
                         ]
                     },

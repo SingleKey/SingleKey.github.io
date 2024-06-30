@@ -7,7 +7,7 @@
 .graphical-1 {
     position: relative;
     left: -15px;
-    height: 25px;
+    height: 23px;
     min-width: 60%;
     transform: skewX(45deg);
     background-color: rgb(85,142,213);
@@ -17,7 +17,7 @@
     position: relative;
     left: -5px;
     top: 5px;
-    height: 20px;
+    height: 18px;
     min-width: 45%;
     transform: skewX(45deg);
     background-color: rgb(247,150,70);

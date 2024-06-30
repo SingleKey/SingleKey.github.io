@@ -7,19 +7,19 @@
     margin-bottom: 10px;
     display: flex;
     overflow: hidden;
-    height: 50px;
+    height: 45px;
 }
 
 
 .graphical-sub-view-2-title {
     position: absolute;
     color: white;
-    height: 20px;
-    min-width: 50px;
-    line-height: 30px;
+    height: 18px;
+    min-width: 45px;
+    line-height: 28px;
     z-index: 10;
     left: 30px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .graphical-sub-line {
@@ -27,14 +27,14 @@
     background-color: rgb(85,142,213);
     width: calc(100% - 5px);
     height: 2px;
-    bottom: 20px;
+    bottom: 15px;
     left: 5px;
 }
 
 .graphical-sub-1 {
     position: relative;
     height: 40px;
-    min-width: 20px;
+    min-width: 18px;
     transform-origin: 5px 10px;
     transform: skewX(45deg) rotate(45deg);
     background-color: rgb(85,142,213);
@@ -44,8 +44,7 @@
     position: relative;
     left: -15px;
     height: 30px;
-    min-width: 150px;
-    max-width: 200px;
+    width: 130px;
     transform: skewX(45deg);
     background-color: rgb(85,142,213);
 }
