@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--    <script src="./js/commons/vue-2.7.13.min.js"></script>-->
+        <script src="https://cdn.bootcdn.net/ajax/libs/vue/2.7.13/vue.js"></script>
+    <title>程序员小杨</title>
+</head>
+<body>
+    <div id="rootView-m">
+        <h3>暂不支持移动端</h3>
+    </div>
+</body>
+
+<style>
+    /* 初始化默认样式 */
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+    }
+
+    ::-webkit-scrollbar {
+        background-color: transparent;
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius: 8px;
+        background-clip: content-box;
+        border: 2px solid transparent;
+    }
+    #rootView-m {
+        width: 96%;
+        height: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        top: 100px;
+    }
+    h3 {
+        color: #b0b0b0;
+    }
+</style>
+
+<script>
+    const vueApp = new Vue({
+        el: "#rootView-m",
+        data() {
+            return {
+            }
+        },
+        methods: {
+
+        }
+    });
+</script>
+</html>

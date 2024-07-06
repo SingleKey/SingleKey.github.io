@@ -172,9 +172,10 @@ const vueapp = new Vue({
         }
     },
     created() {
-
+        this.detectDevice();
     },
     mounted() {
+        this.detectDevice();
         typed = new Typed(".sub-title span", {
             strings: ["一个菜鸟哦^700===", "一个热爱编程^300的^500菜鸟程序员"],//输出的文字
             typeSpeed: 150,//打字的速度
@@ -189,6 +190,27 @@ const vueapp = new Vue({
         });
     },
     methods: {
+        detectDevice() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // 判断是否为移动设备
+            const mobileKeywords = ['Android', 'iPhone', 'iPad', 'iPod', 'BlackBerry', 'Windows Phone'];
+            let isMobile = false;
+
+            for (let keyword of mobileKeywords) {
+                if (userAgent.indexOf(keyword) > -1) {
+                    isMobile = true;
+                    break;
+                }
+            }
+            this.isMobile = isMobile;
+
+            // 根据设备类型跳转
+            if (this.isMobile) {
+                // 如果未检测到移动设备关键词，假设为 PC 端并跳转到 PC 端 URL
+                window.location.href = "https://singlekey.github.io/index-m.html";
+            }
+        },
         targetPosition(val) {
             this.isFixed = val;
         },
